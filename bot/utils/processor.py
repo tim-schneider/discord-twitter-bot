@@ -335,7 +335,7 @@ class Processor:
         )
 
         self.embed.set_author(
-            name="{} (@{})".format(self.status_tweet["user"]["screen_name"], self.status_tweet["user"]["name"]),
+            name="{} (@{})".format(self.status_tweet["user"]["name"], self.status_tweet["user"]["screen_name"]),
             url="https://twitter.com/{}/status/{}".format(
                 self.status_tweet["user"]["screen_name"], self.status_tweet["id_str"]
             ),
